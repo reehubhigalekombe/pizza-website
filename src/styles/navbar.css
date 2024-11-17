@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    height: 140px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.leftSide {
+    flex: 1;
+    text-align: center;
+}
+.leftSide img {
+    width: 90px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.rightSide ul {
+    display: flex;
+    list-style-type: none;  
+   
+
+}
+.rightSide ul li {
+    
+    text-decoration: none;
+    margin: 10px;
+}
+.rightSide {
+    flex: 5;
+  
+}
+.instagram {
+    color: red;
+    font-size: 60px;
+}

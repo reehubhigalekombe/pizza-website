@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.footerTop {
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.footerTop h1 {
+
+}
+.footerTop p {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.footerMiddle {
+    height: 450px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 10px;
+}
+.footerSplit {
+    flex: 1;
+    line-height: 20px;
+
+
+}
+.footerSplit img {
+    width: 100px;
+    border-radius: 98px;
+    
+}
+.footerSplit a {
+    margin: 10px;
+    
+}
+
