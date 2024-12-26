@@ -3,21 +3,17 @@ import "../styles/home.css";
 import patrona from "../assets/patrona.jpg";
 import patrona1 from "../assets/patrona1.jpg";
 import patrona2 from "../assets/patrona3.jpg";
+import imag from "../assets/pisa.webp";
 import { Link } from 'react-router-dom';
 import CEO from "../assets/newceo.jpg"
-function Home() {
+function Home() {   
   return (
     <div className='home'>
-      <div className='hom-pattion first'>
-      <video className='backgroundVideo' autoPlay loop muted>
-        <source src="/assets/higal.mp4" type="video/mp4"/>
-        Your Browser does not support the video tag
-      </video>
-      <div className='content-overlay'>
-        <h1>Welcome to PiZZA Shopp</h1>
+      <div className='hom-pattion first' style={{backgroundImage: `url(${imag})`}}>
+        <h1>Welcome to PiZZA Shop</h1>
         <p>Fresh Ingridients</p>
-        <buton>Explore More</buton>
-      </div>
+        <Link to="/shop" style={{textDecoration: "none"}}> <button className="buttton">Explore More</button></Link>
+       
       </div>
       <div  className='hom-pattion second'>
       <div className='partion'>
@@ -34,18 +30,14 @@ function Home() {
         <li> <Link to="/menu"><img src={patrona1} alt='patrona1' /></Link></li>
         <li> <Link to="/menu"><img src={patrona2} alt='patrona2' /></Link></li>
       </ul>
-  <div>    <Link to="/menu"><button style={styles.button}>VIEW FULL MENU</button></Link></div>
+  <div>    <Link to="/menu"><button className='buttton'>VIEW FULL MENU</button></Link></div>
         </div>
         
-      </div>
-      <div  className='hom-pattion third'>
-        
-        <h2>Yes Higal</h2>
       </div>
       <div  className='hom-pattion fourth'>
       <div className='fourth-partions'>
       <h2>A Slice of History</h2>
-      <img  src={CEO}  alt='ceo'/>
+      <img  src={CEO}  alt='ceo' style={{borderRadius: "50px"}}/>
       <h1>Higal Ekombe</h1>
       <h1 style={{color: "blue", lineHeight: "0px"}}>Company President</h1>
       </div>
@@ -58,7 +50,7 @@ function Home() {
           shop by thousands of its customers. Stop by one of our many shops distributed in the Kenyan major Cities and Towns today 
          and discover why our Pizza Shop is the best
       ORIGINAL Neighborhood Pizza Place!</p>
-      <div> <Link to="/locations"><button style={styles.button}>FIND OUR LOCATION</button></Link> </div>
+      <div> <Link to="/locations"><button className='buttton'>FIND OUR LOCATION</button></Link> </div>
      
       </div>
       
@@ -66,15 +58,5 @@ function Home() {
     </div>
   )
 }
-const styles ={
-  button: {
-      backgroundColor: "yellow",
-      padding: "15px 48px",
-      borderRadius: "98px",
-      fontWeight: "bold",
-      color: "red",
-      
-   },
-  
-}
+
 export default Home

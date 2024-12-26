@@ -15,15 +15,13 @@ function Navbar() {
  </div>
  <div className='rightSide'>
    <ul>
-      <li><Link to="" style={styles.links}>Home</Link></li>
-      <li> <Link to="/menu" style={styles.links}>Menu</Link></li>
-      <li><Link to="/offer" style={styles.links}>Offer</Link></li>
-      <li><Link to="/gifts" style={styles.links}>Gifts</Link></li>
-      <li><Link to="/locations" style={styles.links}>Locations</Link></li>
-      <li><Link to="/shop" style={styles.links}>Shop</Link></li>
-      <li><Link to="/newsletter" style={styles.links}>Newsletter</Link></li>
-      <li><Link to="/contacts" style={styles.links}>Contacts</Link></li>
-      <button style={styles.button}>ORDER ONLINE</button>
+      <li><Link to="" style={styles.links}>HOME</Link></li>
+      <li> <Link to="/menu" style={styles.links}>MENU</Link></li>
+      <li><Link to="/gifts" style={styles.links}>GIFTS</Link></li>
+      <li><Link to="/locations" style={styles.links}>LOCATIONS</Link></li>
+      <li><Link to="/shop" style={styles.links}>SHOP</Link></li>
+      <li><Link to="/newsletter" style={styles.links}>NEWSLETTER</Link></li>
+      <li>  <Link to="/menu">  <button style={styles.button}>ORDERONLINE</button></Link></li>
       <li >   <a href='https://m.facebook.com/higal.ekombe.3/' target='_blank' rel="noopener noreferrer" style={styles.instagram}><Instagram style={styles.socialMedia}/></a></li>
       <li>   <a href='https://x.com/HigalEkomb52804' target='_blank' rel="noopener noreferrer" style={styles.x}><X style={styles.socialMedia}/></a></li>
       <li><a href='https://wa.link/tu37h1' target='_blank' rel="noopener noreferrer" style={styles.whatsapp}><WhatsApp style={styles.socialMedia}/></a></li>
@@ -44,9 +42,10 @@ const styles = {
    },
    button: {
       backgroundColor: "yellow",
-      padding: "5px 10px",
+      padding: "5px 30px",
       borderRadius: "98px",
       fontWeight: "bold",
+      fontSize: "10px"
    },
    instagram: {
       color: "white",

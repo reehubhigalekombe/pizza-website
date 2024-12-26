@@ -28,6 +28,7 @@
     
     text-decoration: none;
     margin: 10px;
+    line-height: 0PX;
 }
 .rightSide {
     flex: 5;
@@ -36,4 +37,11 @@
 .instagram {
     color: red;
     font-size: 60px;
+}
+.butt {
+    background-color: yellow;
+    padding: 5px 30px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
 }

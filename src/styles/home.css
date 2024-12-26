@@ -1,8 +1,10 @@
 .home {
     width: 100%;
-    height: 400vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
+    text-align: center;
+ 
 }
 .hom-pattion {
     width: 100%;
@@ -12,6 +14,21 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+ 
+}
+.first h1 {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+}
+.first p {
+    color: white;
+    font-size: 45px;
+    text-align: center;
 }
 .backgroundVideo {
     position: absolute;
@@ -123,3 +140,15 @@
 .fourth-partions img {
     width: 60%;
 }
+.buttton {
+    background-color: yellow;
+    padding: 15px 48px;
+    border-radius: 98px;
+    font-weight: bold;
+    color: black;
+}
+.buttton:hover {
+    background-color: rgb(237, 17, 17);
+
+}
+

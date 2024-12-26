@@ -31,16 +31,16 @@ function Footer() {
         <div className='footerSplit'>
             <h2>VISIT US:</h2>
             <p><Link to="/menu" style={styles.linksty}>Menu</Link></p>
-            <p><Link to="/order" style={styles.linksty}>Order Online</Link></p>
+            <p><Link to="/shop" style={styles.linksty}>Shop</Link></p>
             <p><Link to="locations" style={styles.linksty}>Locations</Link></p>
             <p><Link to="gift" style={styles.linksty}>Gift Cards</Link></p>
-            <p><Link to="/contact" style={styles.linksty}>Contact</Link></p>
+            <p><Link to="/newsletter" style={styles.linksty}>Newsletter</Link></p>
             
         </div>
         <div className='footerSplit'>
             <h2>COMPANY INFO: </h2>
             <p>If you would like onformation about opening your own Pizza Shop locatio, please fill out the following form:</p>
-            <p><button style={styles.button}>COMPANY INFO</button></p>
+            <p><Link to="/newsletter"><button style={styles.button}>COMPANY INFO</button></Link></p>
            
         </div>
         <div className='footerSplit'>
